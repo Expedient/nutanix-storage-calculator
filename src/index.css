@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-exp-red: #f20505;
+  --color-exp-red-dark: #c70404;
+  --color-exp-red-light: #ff3333;
+  --color-exp-black: #1a1a1a;
+  --color-exp-dark: #2d2d2d;
+  --color-exp-gray-600: #4b5563;
+  --color-exp-gray-500: #6b7280;
+  --color-exp-gray-400: #9ca3af;
+  --color-exp-gray-300: #d1d5db;
+  --color-exp-gray-200: #e5e7eb;
+  --color-exp-gray-100: #f3f4f6;
+  --color-exp-gray-50: #f8f9fa;
+  --font-family-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-sans);
+  background-color: var(--color-exp-gray-50);
+  color: var(--color-exp-black);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--color-exp-gray-200);
+  outline: none;
+  width: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-exp-red);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-exp-red);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
